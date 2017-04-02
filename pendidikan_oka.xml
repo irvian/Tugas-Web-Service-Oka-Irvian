@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE logpendidikan SYSTEM "logpendidikan.dtd">
+<logpendidikan>
+<dosen>
+<kode>1753452</kode>
+<nama>suhastuti</nama>
+<alamat>bandung</alamat>
+<umur>50</umur>
+<tanggal_lahir>10</tanggal_lahir>
+<tempat_lahir>sukabumi</tempat_lahir>
+<jenis_kelamin>perempuan</jenis_kelamin>
+<jabatan>dosen pend.fisika</jabatan>
+<prodi>fmipa</prodi>
+<fak>fkip</fak>
+</dosen>
+
+<mahasiswa>
+<nama>Oka_sinaga</nama>
+<nim>1154011</nim>
+<alamat>medan</alamat>
+<jenis_kelamin>laki_laki</jenis_kelamin>
+<agama>kristen_protestan</agama>
+<asal_SLTA>SMAN_2_Medan</asal_SLTA>
+<jalur_masuk>diploma</jalur_masuk>
+<tanggal_terdaftar>16_agustus_2015</tanggal_terdaftar>
+<warga_negara>WNI</warga_negara>
+<nama_orangtua>rian_wesli</nama_orangtua>
+</mahasiswa>
+
+<profil_universitas>
+<nama>Politeknik_Pos_Indonesia</nama>
+<tahun_berdiri>17_januari_2001</tahun_berdiri>
+<rektor>DR. Ir. Agus Purnomo, M.T.</rektor>
+<fakultas>4_fakultas</fakultas>
+<dosen>150</dosen>
+<mahasiswa_total>950</mahasiswa_total>
+<website>www.poltekpos.ac.id</website>
+<alamat_kontak>Telepon/fax: +62 0536 3221722</alamat_kontak>
+<lulusan>556</lulusan>
+<program_studi>diploma(D3),diploma(D4)</program_studi>
+</profil_universitas>
+
+<teknisi>
+<nama>dadang</nama>
+<tempat_lahir>jakarta</tempat_lahir>
+<tanggal_lahir>20_mei_1995</tanggal_lahir>
+<jabatan>teknisi_software</jabatan>
+<alamat>surakarta</alamat>
+<jenis_kelamin>laki_laki</jenis_kelamin>
+<masa_kerja>3_tahun</masa_kerja>
+<bagian>ka.lab_developer</bagian>
+<tempat_kerja>universitas_indonesia</tempat_kerja>
+<hobby>mendaki,sepak_bola</hobby>
+</teknisi>
+
+	<satpam>
+		<nama>sulaiman</nama>
+		<tempat_lahir>tangerang</tempat_lahir>
+		<alamat>jatinangor</alamat>
+		<jenis_kelamin>laki_laki</jenis_kelamin>
+		<hobby>sepak_bola</hobby>
+		<pekerjaan>satpam_universitas</pekerjaan>
+		<pendidikan>SLTA</pendidikan>
+		<masa_kerja>4_tahun</masa_kerja>
+		<tanggal_lahir>28_maret_1965</tanggal_lahir>
+		<jabatan>kepala_satpam</jabatan>
+	</satpam>
+</logpendidikan>
