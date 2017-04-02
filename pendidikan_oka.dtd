@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="logpendidikan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dosen"/>
+                <xs:element ref="mahasiswa"/>
+                <xs:element ref="profil_universitas"/>
+                <xs:element ref="teknisi"/>
+                <xs:element ref="satpam"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mahasiswa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="nim"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jenis_kelamin"/>
+                <xs:element ref="agama"/>
+                <xs:element ref="asal_SLTA"/>
+                <xs:element ref="jalur_masuk"/>
+                <xs:element ref="tanggal_terdaftar"/>
+                <xs:element ref="warga_negara"/>
+                <xs:element ref="nama_orangtua"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nim" type="xs:integer"/>
+    <xs:element name="agama" type="xs:NCName"/>
+    <xs:element name="asal_SLTA" type="xs:NCName"/>
+    <xs:element name="jalur_masuk" type="xs:NCName"/>
+    <xs:element name="tanggal_terdaftar" type="xs:NMTOKEN"/>
+    <xs:element name="warga_negara" type="xs:NCName"/>
+    <xs:element name="nama_orangtua" type="xs:NCName"/>
+    <xs:element name="profil_universitas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="tahun_berdiri"/>
+                <xs:element ref="rektor"/>
+                <xs:element ref="fakultas"/>
+                <xs:element ref="dosen"/>
+                <xs:element ref="mahasiswa_total"/>
+                <xs:element ref="website"/>
+                <xs:element ref="alamat_kontak"/>
+                <xs:element ref="lulusan"/>
+                <xs:element ref="program_studi"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tahun_berdiri" type="xs:NMTOKEN"/>
+    <xs:element name="rektor" type="xs:string"/>
+    <xs:element name="fakultas" type="xs:NMTOKEN"/>
+    <xs:element name="mahasiswa_total" type="xs:integer"/>
+    <xs:element name="website" type="xs:NCName"/>
+    <xs:element name="alamat_kontak" type="xs:string"/>
+    <xs:element name="lulusan" type="xs:integer"/>
+    <xs:element name="program_studi" type="xs:string"/>
+    <xs:element name="teknisi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="tempat_lahir"/>
+                <xs:element ref="tanggal_lahir"/>
+                <xs:element ref="jabatan"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jenis_kelamin"/>
+                <xs:element ref="masa_kerja"/>
+                <xs:element ref="bagian"/>
+                <xs:element ref="tempat_kerja"/>
+                <xs:element ref="hobby"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bagian" type="xs:NCName"/>
+    <xs:element name="tempat_kerja" type="xs:NCName"/>
+    <xs:element name="satpam">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="tempat_lahir"/>
+                <xs:element ref="alamat"/>
+                <xs:element ref="jenis_kelamin"/>
+                <xs:element ref="hobby"/>
+                <xs:element ref="pekerjaan"/>
+                <xs:element ref="pendidikan"/>
+                <xs:element ref="masa_kerja"/>
+                <xs:element ref="tanggal_lahir"/>
+                <xs:element ref="jabatan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pekerjaan" type="xs:NCName"/>
+    <xs:element name="pendidikan" type="xs:NCName"/>
+    <xs:element name="dosen">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="alamat"/>
+                <xs:element ref="jabatan"/>
+                <xs:element ref="jenis_kelamin"/>
+                <xs:element ref="nama"/>
+                <xs:element ref="tanggal_lahir"/>
+                <xs:element ref="tempat_lahir"/>
+                <xs:element ref="fak"/>
+                <xs:element ref="kode"/>
+                <xs:element ref="prodi"/>
+                <xs:element ref="umur"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fak" type="xs:NCName"/>
+    <xs:element name="kode" type="xs:integer"/>
+    <xs:element name="prodi" type="xs:NCName"/>
+    <xs:element name="umur" type="xs:integer"/>
+    <xs:element name="nama" type="xs:NCName"/>
+    <xs:element name="alamat" type="xs:NCName"/>
+    <xs:element name="jenis_kelamin" type="xs:NCName"/>
+    <xs:element name="tempat_lahir" type="xs:NCName"/>
+    <xs:element name="tanggal_lahir" type="xs:NMTOKEN"/>
+    <xs:element name="jabatan" type="xs:string"/>
+    <xs:element name="masa_kerja" type="xs:NMTOKEN"/>
+    <xs:element name="hobby" type="xs:string"/>
+</xs:schema>
+
